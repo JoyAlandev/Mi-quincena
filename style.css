@@ -6,8 +6,8 @@
 
 body {
   font-family: sans-serif;
-  background: #111;
-  color: #eee;
+  background: #ffffff;
+  color: #ffffff;
   padding: 1rem;
 }
 
@@ -67,7 +67,7 @@ button:hover {
 }
 
 .btn-borrar {
-  background: #aa3333;
+  background: #b30000;
 }
 
 .modal {
