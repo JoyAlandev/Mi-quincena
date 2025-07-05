@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Administrador Quincenal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Organizador de Gastos Quincenales</h1>
+    <form id="gastoForm">
+      <label>¿Cuánto cobraste?</label>
+      <input type="number" id="ingreso" placeholder="Ej: 500" required />
+
+      <h3>💸 Gastos Fijos</h3>
+      <div id="gastosFijos"></div>
+      <button type="button" onclick="agregarGastoFijo()">➕ Agregar Gasto Fijo</button>
+
+      <h3>📊 Gastos Variables (en %)</h3>
+      <div id="gastosVariables"></div>
+      <button type="button" onclick="agregarGastoVariable()">➕ Agregar Gasto Variable</button>
+
+      <p id="saldoDisponible"></p>
+      <p id="porcentajeDisponible"></p>
+
+      <button type="submit" class="btn-calcular">✅ Calcular</button>
+    </form>
+
+    <button id="btnBorrar" class="btn-borrar">🗑 Borrar configuración</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <!-- MODAL DE BORRADO -->
+  <div id="modalBorrar" class="modal hidden">
+    <div class="modal-content">
+      <h3>Selecciona qué deseas borrar</h3>
+      <div id="listaBorrar"></div>
+      <button onclick="borrarTodo()" class="btn-todo">🧹 Borrar todo</button>
+      <button onclick="cerrarModal()" class="btn-cerrar">❌ Cerrar</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #111;
+  color: #eee;
+  padding: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+  background: #222;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #000;
+}
+
+h1, h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 0.6rem;
+  margin: 0.5rem 0;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #666;
+}
+
+#resultado {
+  margin-top: 2rem;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabla th, .tabla td {
+  border: 1px solid #555;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.btn-borrar {
+  background: #aa3333;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #222;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.lista-item {
+  background: #333;
+  margin: 0.4rem 0;
+  padding: 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.lista-item:hover {
+  background: #555;
+}
+
+.btn-todo {
+  background: #b30000;
+  margin-top: 1rem;
+}
+
+.btn-cerrar {
+  background: #444;
+  margin-top: 0.5rem;
+}
+
+/* Separador para gastos */
+#gastosFijos > div, 
+#gastosVariables > div {
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+
+#gastosFijos > div:first-child, 
+#gastosVariables > div:first-child {
+  margin-top: 0.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
+  }
+
+  input, button {
+    padding: 0.4rem;
+  }
+
+  .tabla th, .tabla td {
+    padding: 0.4rem;
+  }
+}
